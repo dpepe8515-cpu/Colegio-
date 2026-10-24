@@ -1,0 +1,36 @@
+:root{--navy:#0c3b73;--navy2:#082a53;--gold:#c9961a;--ink:#1c2230;--mute:#5b6475;--bg:#fff;--soft:#f3f5f9;--line:#dfe3ec}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 .6rem;color:var(--navy)}
+a{color:var(--navy)}:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.w{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+.top{background:var(--navy);position:sticky;top:0;z-index:30}
+.top .w{display:flex;align-items:center;max-width:none;padding:0 0 0 2rem;min-height:62px}
+.top nav{display:flex;gap:1.6rem;flex:1}.top nav a{color:#fff;text-decoration:none;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.top nav a:hover{text-decoration:underline}
+.badge{background:#fff;padding:.5rem .9rem;margin-right:2rem;align-self:flex-start;height:96px;display:flex;align-items:center;gap:.6rem;box-shadow:0 4px 10px rgba(0,0,0,.25);text-decoration:none}
+.badge img{height:78px}
+#mb{display:none;background:none;border:0;color:#fff;font:inherit;padding:1rem;margin-left:auto;cursor:pointer}
+.hero{position:relative;min-height:520px;background:linear-gradient(120deg,var(--navy2),var(--navy));background-size:cover;background-position:center;display:flex;align-items:flex-end;overflow:hidden}
+.hero .mark{position:absolute;right:6%;top:50%;transform:translateY(-50%);width:300px;opacity:.12}
+.panel{position:relative;background:rgba(40,48,58,.72);color:#fff;padding:2.4rem 6rem 2.4rem 2rem;clip-path:polygon(0 0,86% 0,100% 100%,0 100%);max-width:620px;margin-bottom:0;min-height:300px}
+.panel h1{color:#fff;font-family:system-ui,sans-serif;font-weight:300;letter-spacing:.22em;text-transform:uppercase;font-size:clamp(1.3rem,3.4vw,1.9rem)}
+.panel p{max-width:34ch}
+.btn{display:inline-block;background:var(--gold);color:#1a1405;font-weight:700;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;padding:.8rem 1.2rem;border:0;border-radius:3px;cursor:pointer}
+.btn.ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.5)}
+.btn:hover{filter:brightness(1.08)}
+section{padding:3.5rem 0}section.soft{background:var(--soft)}
+.g{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.c{background:#fff;border:1px solid var(--line);border-radius:6px;padding:1.2rem}
+.gal{display:grid;gap:.6rem;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;cursor:zoom-in}
+dialog#lb{border:0;padding:0;background:#000;max-width:92vw}dialog img{max-width:92vw;max-height:80vh;display:block}dialog p{color:#fff;margin:0;padding:.6rem 1rem}
+footer{background:var(--navy2);color:#c9d3e8;padding:2.5rem 0;font-size:.9rem}footer a{color:#fff}
+label{display:block;font-weight:600;margin:.8rem 0 .2rem}
+input,select,textarea{width:100%;padding:.65rem;border:1px solid #b9c0d0;border-radius:4px;font:inherit}
+.err{background:#fde8e8;border:1px solid #e0a0a0;padding:.8rem 1rem;border-radius:4px}.ok{background:#e6f4e6;border:1px solid #9cc89c;padding:.8rem 1rem;border-radius:4px}
+.form{max-width:640px;margin:2.5rem auto}
+.adm{display:grid;grid-template-columns:210px 1fr;min-height:100vh}.side{background:var(--navy2);padding:1rem}.side a{display:block;color:#fff;text-decoration:none;padding:.5rem .6rem;border-radius:4px}.side a:hover{background:rgba(255,255,255,.12)}
+.main{padding:1.5rem;overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{border-bottom:1px solid var(--line);padding:.5rem;text-align:left;vertical-align:top}
+.k{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));margin-bottom:1.5rem}.k div{background:var(--soft);padding:1rem;border-radius:6px}.k b{display:block;font-size:1.6rem;color:var(--navy)}
+.row{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}.row>*{width:auto}
+@media(max-width:860px){.top nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy);flex-direction:column;padding:1rem 2rem;gap:.9rem}.top nav.open{display:flex}#mb{display:block}.badge{margin-right:.5rem;height:70px}.badge img{height:54px}.top .w{padding-left:1rem}.panel{padding-right:3rem}.adm{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
